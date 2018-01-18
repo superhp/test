@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,8 @@ namespace VisualCalculator
 
         private void sum_Click(object sender, RoutedEventArgs e)
         {
-            result.Content = (int.Parse(n1.Text) + int.Parse(n2.Text)).ToString(); 
+            result.Content = (int.Parse(n1.Text) + int.Parse(n2.Text)).ToString();
+            Debug.WriteLine("change");
         }
     }
 }
